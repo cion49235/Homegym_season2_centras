@@ -11,9 +11,7 @@ public class PreferenceUtil {
 	
 	private static final String SHARED_FILE_TITLE = "pref_goodworshipbible";
 	public final static String PREF_AD_VIEW = "ad_view";
-	
-	//==============================================================================================//
-	//================================ ?��리퍼?��?�� ???��?���?? 불러?���?? ================================//
+	public final static String PREF_AD_TIME = "ad_time";
 	public static boolean getBooleanSharedData(Context context, String key, boolean defaultData) {
         SharedPreferences pref = context.getSharedPreferences(SHARED_FILE_TITLE, Context.MODE_PRIVATE);
         return pref.getBoolean(key, defaultData);
